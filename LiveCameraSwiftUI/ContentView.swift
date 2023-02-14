@@ -14,17 +14,14 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geo in
             
-            ZStack{
+            VStack{
+                FrameView(image: model.frame)
+                    .ignoresSafeArea()
+                    .frame(width: geo.size.width, height: geo.size.height*heightRatio, alignment: .center)
                 Color.white
-                VStack{
-                    FrameView(image: model.frame)
-                        .frame(width: geo.size.width, height: geo.size.height*heightRatio, alignment: .leading)
-                       // .ignoresSafeArea()
-                    Spacer()
-                }
+                    .frame(width: geo.size.width, height: geo.size.height*heightRatio, alignment: .center)
             }
         }
-        
     }
 }
 
