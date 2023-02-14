@@ -11,6 +11,8 @@
 		E0FB1E3B29916E5300F1A190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB1E3A29916E5300F1A190 /* ContentView.swift */; };
 		E0FB1E3D29916E5500F1A190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0FB1E3C29916E5500F1A190 /* Assets.xcassets */; };
 		E0FB1E4029916E5500F1A190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0FB1E3F29916E5500F1A190 /* Preview Assets.xcassets */; };
+		E0FB1E4729916E7100F1A190 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB1E4629916E7100F1A190 /* FrameView.swift */; };
+		E0FB1E4929916EF300F1A190 /* FrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB1E4829916EF300F1A190 /* FrameHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E0FB1E3A29916E5300F1A190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0FB1E3C29916E5500F1A190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0FB1E3F29916E5500F1A190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0FB1E4629916E7100F1A190 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		E0FB1E4829916EF300F1A190 /* FrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				E0FB1E3829916E5300F1A190 /* LiveCameraSwiftUIApp.swift */,
 				E0FB1E3A29916E5300F1A190 /* ContentView.swift */,
+				E0FB1E4629916E7100F1A190 /* FrameView.swift */,
+				E0FB1E4829916EF300F1A190 /* FrameHandler.swift */,
 				E0FB1E3C29916E5500F1A190 /* Assets.xcassets */,
 				E0FB1E3E29916E5500F1A190 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0FB1E4729916E7100F1A190 /* FrameView.swift in Sources */,
 				E0FB1E3B29916E5300F1A190 /* ContentView.swift in Sources */,
+				E0FB1E4929916EF300F1A190 /* FrameHandler.swift in Sources */,
 				E0FB1E3929916E5300F1A190 /* LiveCameraSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +278,7 @@
 				DEVELOPMENT_TEAM = 4CMMAN8CH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera required for preview";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +308,7 @@
 				DEVELOPMENT_TEAM = 4CMMAN8CH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera required for preview";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
