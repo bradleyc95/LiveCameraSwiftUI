@@ -18,8 +18,14 @@ struct ContentView: View {
                 FrameView(image: model.frame)
                     .ignoresSafeArea()
                     .frame(width: geo.size.width, height: geo.size.height*heightRatio, alignment: .center)
-                Color.white
-                    .frame(width: geo.size.width, height: geo.size.height*heightRatio, alignment: .center)
+                ZStack {
+                    Color.white
+                        .frame(width: geo.size.width, height: geo.size.height*heightRatio, alignment: .center)
+                    Text("Placeholder Text...")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                }
+                
             }
         }
     }
